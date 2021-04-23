@@ -1,0 +1,21 @@
+.bg-white{
+    box-shadow: 0px 1px 5px 1px indigo;
+    background: linear-gradient(to right, #2d0a6e, #6615e9);
+    color: white;
+}
+
+#button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
