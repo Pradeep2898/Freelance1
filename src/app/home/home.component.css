@@ -9,6 +9,10 @@
   color: white;
   padding: 6%;
 }
+.services ul li a.active g {
+  fill: cyan;
+  transition: 0.5s;
+}
 .third, .say {
   padding: 6%;
 }
