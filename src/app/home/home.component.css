@@ -4,6 +4,10 @@
   background: url("../../images/cool-background.png") 0 0px no-repeat;
   background-size: cover;
 }
+#body > .row >:not(:last-child).col-sm {
+  /* put right border to all icon, except for last one */
+  border-right: 2px solid indigo;
+}
 .services {
   background-image: linear-gradient(#000063, #0000ff);
   color: white;
@@ -13,10 +17,11 @@
   fill: cyan;
   transition: 0.5s;
 }
-.third, .say {
+.third,
+.say {
   padding: 6%;
 }
-.works{
+.works {
   background-color: #000;
   color: white;
   padding: 6%;
@@ -80,110 +85,119 @@
 .service-10 .btn-outline-light:hover {
   color: #263238 !important;
 }
-.works span{
-  font-size:15px;
+.works span {
+  font-size: 15px;
 }
-.works a{
-text-decoration:none; 
-color: #0062cc;
-border-bottom:2px solid #0062cc;
+.works a {
+  text-decoration: none;
+  color: #0062cc;
+  border-bottom: 2px solid #0062cc;
 }
-.works .box{
-  padding:60px 0px;
+.works .box {
+  padding: 60px 0px;
 }
 
-.works .box-part{
-  background:white;
+.works .box-part {
+  background: white;
   color: black;
-  border-radius:0;
-  padding:60px 10px;
-  margin:30px 0px;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
 }
-.works .text{
-  margin:20px 0px;
+.works .text {
+  margin: 20px 0px;
 }
 
-.works .fa{
-   color:#4183D7;
+.works .fa {
+  color: #4183d7;
 }
 
 .card-0 {
   color: #fff;
-  background-color: #536DFE;
+  background-color: #536dfe;
   position: relative;
   margin-left: 70px;
   border-radius: 10px;
-  min-height: 312px
+  min-height: 312px;
 }
 
 .carousel-indicators li {
   cursor: pointer;
   border-radius: 50% !important;
   width: 10px;
-  height: 10px
+  height: 10px;
 }
 
 .profile {
   color: #000;
-  background-color: #FFD54F;
+  background-color: #ffd54f;
   position: absolute;
   left: -70px;
   top: 17%;
   border-radius: 8px;
   border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px
+  border-bottom-right-radius: 0px;
 }
 
 .profile-pic {
   width: 120px;
   height: 120px;
   border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px
+  border-top-right-radius: 10px;
 }
 
 .open-quotes {
   margin-left: 130px;
-  margin-top: 100px
+  margin-top: 100px;
 }
 
 .content {
   margin-left: 150px;
-  margin-right: 80px
+  margin-right: 80px;
 }
 
 .close-quotes {
   margin-bottom: 100px;
-  margin-right: 60px
+  margin-right: 60px;
 }
 
 @media screen and (max-width: 600px) {
   .card-main {
-      padding: 50px 10px
+    padding: 50px 10px;
   }
 
   .card-0 {
-      min-height: 432px
+    min-height: 432px;
   }
 
   .profile {
-      top: 24%
+    top: 24%;
   }
 
   .profile-pic {
-      width: 90px;
-      height: 90px
+    width: 90px;
+    height: 90px;
   }
 
   .open-quotes {
-      margin-left: 100px
+    margin-left: 100px;
   }
 
   .content {
-      margin-left: 120px;
-      margin-right: 50px
+    margin-left: 120px;
+    margin-right: 50px;
   }
 
   .close-quotes {
-      margin-right: 30px
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* For mobile phones: */
+  .top {
+    padding-top: 20%;
+  }
+  #body > .row >:not(:last-child).col-sm {
+    border-right: 0;
   }
 }
