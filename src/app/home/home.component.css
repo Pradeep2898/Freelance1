@@ -1,8 +1,12 @@
 .top {
   padding: 6% 0;
   width: 100%;
-  background: url("../../images/cool-background.png") 0 0px no-repeat;
+  background: url("../../images/home3.jpeg") 0 0px no-repeat;
   background-size: cover;
+}
+.box{
+  background-color: rgba(209, 209, 209, 0.699);
+  border-radius: 1%;
 }
 #body > .row >:not(:last-child).col-sm {
   /* put right border to all icon, except for last one */
