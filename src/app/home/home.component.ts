@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(function(){
-      $('.btn-circle').on('click',function(){
+    $(()=>{
+      $('.btn-circle').on('click',()=>{
         $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
-        $('.btn-circle.btn-info').addClass('btn-info').removeClass('btn-default').blur();
+        $(this).addClass('btn-info').removeClass('btn-default').blur();
       });
      
       $('.next-step, .prev-step').on('click', function (e:any){
