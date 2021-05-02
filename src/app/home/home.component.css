@@ -385,43 +385,110 @@
     left: 100%;
   }
 }
-.process-step .btn:focus {
-  outline: none;
-}
-.process {
-  display: table;
-  width: 100%;
+
+.horizontal-tabs-steps {
   position: relative;
 }
-.process-row {
-  display: table-row;
+
+.horizontal-tabs-steps .nav-item {
+  z-index: 1;
+  position: relative;
 }
-.process-step button[disabled] {
-  opacity: 1 !important;
-  filter: alpha(opacity=100) !important;
-}
-.process-row:before {
-  top: 40px;
-  bottom: 0;
+
+.horizontal-tabs-steps .nav-item:after {
+  content: "";
+  border-top: 5px dotted #73b6ff;
   position: absolute;
-  content: " ";
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
-  z-order: 0;
+  z-index: 0;
+  top: 12px;
+  width: 265px;
+  left: 0px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
 }
-.process-step {
-  display: table-cell;
-  text-align: center;
+
+.horizontal-tabs-steps .nav-item:last-child:after {
+  content: "";
+  border-top: 0px dotted #4da3ff;
+}
+
+.horizontal-tabs-steps .nav-item.complete-step:after {
+  content: "";
+  border-top: 5px dotted #4d7ed2;
+  position: absolute;
+  z-index: 0;
+  top: 12px;
+  width: 265px;
+  left: 0px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s
+}
+
+.horizontal-tabs-steps .nav-link {
+  background: #fff;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  color: #3c4858;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: 2px solid #4d7ed2;
+  z-index: 1;
   position: relative;
 }
-.process-step p {
-  margin-top: 4px;
+
+.horizontal-tabs-steps .nav-link:hover {
+  background: #22437c;
+  border: 2px solid #22437c;
+  color: #fff !important;
+  transition: 0.3s all;
 }
-.btn-circle {
-  width: 80px;
-  height: 80px;
-  text-align: center;
+
+.horizontal-tabs-steps .nav-link:hover .horizontal-tabs-steps .nav-link span {
+  color: #fff !important;
+}
+
+.horizontal-tabs-steps .nav-item h6 {
   font-size: 12px;
+}
+
+.horizontal-tabs-steps .nav-item.show .nav-link, .horizontal-tabs-steps .nav-link.active {
+  color: #fff;
+  background-color: #22437c;
+  border-color: #22437c;
+  width: 31px;
+  height: 31px;
   border-radius: 50%;
+}
+
+.horizontal-tabs-steps .nav-link.active span {
+  color: #fff;
+  font-weight: 500 !important;
+}
+
+.horizontal-tabs-steps .checked-steps span {
+  display: none;
+}
+
+.horizontal-tabs-steps .checked-steps {
+  background-color: #22437c !important;
+  border: 1px solid #22437c !important;
+  color: #fff !important;
+}
+
+.horizontal-tabs-steps .checked-steps:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #fff;
+}
+.platform-content .tab-pane h3 {
+  font-size: 15px;
+  font-weight: 500 !important;
+}
+
+.platform-content .tab-pane p {
+  font-size: 12px;
 }

@@ -10,31 +10,19 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $(()=>{
-      $('.btn-circle').on('click',()=>{
-        $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
-        $(this).addClass('btn-info').removeClass('btn-default').blur();
+    $(document).ready(()=> {
+      $(".vertical-tabs-steps .nav-link, .horizontal-tabs-steps .nav-link").click(()=> {
+        $(this).parent().prevAll().children('.vertical-tabs-steps .nav-link, .horizontal-tabs-steps .nav-link').addClass('checked-steps');
+
+        $(this).parent().nextAll().children('.vertical-tabs-steps .nav-link, .horizontal-tabs-steps .nav-link').removeClass('checked-steps');
+
+        $(this).removeClass('checked-steps');
+        $(this).parent().removeClass('complete-step');
+        $(this).parent().nextAll().removeClass('complete-step');
+
+        $(".horizontal-tabs-steps .nav-link.checked-steps, .vertical-tabs-steps .nav-link.checked-steps").parent().addClass('complete-step');
       });
-     
-      $('.next-step, .prev-step').on('click', function (e:any){
-        var $activeTab = $('.tab-pane.active');
-     
-        $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
-     
-        if ( $(e.target).hasClass('next-step') )
-        {
-           var nextTab = $activeTab.next('.tab-pane').attr('id');
-           $('[href="#'+ nextTab +'"]').addClass('btn-info').removeClass('btn-default');
-           $('[href="#'+ nextTab +'"]').tab('show');
-        }
-        else
-        {
-           var prevTab = $activeTab.prev('.tab-pane').attr('id');
-           $('[href="#'+ prevTab +'"]').addClass('btn-info').removeClass('btn-default');
-           $('[href="#'+ prevTab +'"]').tab('show');
-        }
-      });
-     });
+    });
   }
 
 }
