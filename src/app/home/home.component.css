@@ -492,3 +492,31 @@
 .platform-content .tab-pane p {
   font-size: 12px;
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 219px;
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 160px;
+  } 
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 115px;
+  } 
+}
+
+@media only screen and (max-width: 420px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 95px;
+  } 
+}
