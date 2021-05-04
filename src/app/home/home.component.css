@@ -11,7 +11,7 @@
   background: #000; /* fallback colour. Make sure this is just one solid colour. */
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_1280.jpg")
-      0 -0px no-repeat;
+      0 0px no-repeat;
   background-size: cover;
 }
 .top .box {
@@ -251,7 +251,7 @@
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
 }
 .services .card .txt {
-  margin-left: -3rem;
+  margin-left: 2rem;
   z-index: 1;
 }
 .services .card .txt h1 {
