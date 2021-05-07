@@ -1,8 +1,8 @@
 .top {
   padding: 6% 0;
   width: 100%;
-  background: url("../../assets/images/home3.jpeg") 0 0px no-repeat;
-  background-size: cover;
+  background: url("../../assets/images/home5.jpg") 0 0px no-repeat;
+  /* background-size: cover; */
 }
 .meet {
   padding: 6% 0;
@@ -14,24 +14,29 @@
       0 0px no-repeat;
   background-size: cover;
 }
-.top .box {
+/* .top .box {
   background-color: rgba(209, 209, 209, 0.5);
-  /* border-radius: 1%; */
   margin-top: 5%;
-}
+} */
 #body > .row > :not(:last-child).col-sm {
   /* put right border to all icon, except for last one */
-  border-right: 2px solid indigo;
+  border-right: 2px solid #2b0049;
 }
+.display-4{
+  text-decoration: underline;
+  text-decoration-color: #2b0049;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 2rem;
+}
+
 .services,
+.why-us,
+.packages,
 .works,
 .say {
   background-color: rgb(223, 240, 255);
   color: #000;
-  padding: 6%;
-}
-.why-us,
-.packages {
   padding: 6%;
 }
 .why-us h2 {
@@ -53,10 +58,10 @@
 
 .why-us .box {
   padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px  rgb(43, 0, 73, 0.1);
   transition: 0.5s;
   position: relative;
-  background-color: #333;
+  background-color: rgb(43, 0, 73);    /* earlier #333 */
   max-height: 230px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -64,8 +69,8 @@
 }
 .why-us .box:hover {
   padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 15px 30px  rgb(43, 0, 73, 0.2);
+  background-color:  rgb(43, 0, 73, 0.3);
 }
 .why-us .box img {
   position: absolute;
@@ -111,7 +116,7 @@
 }
 .card-0 {
   color: #fff;
-  background-color: #536dfe;
+  background-color: #2b0049;
   position: relative;
   margin-left: 70px;
   border-radius: 10px;
@@ -127,7 +132,7 @@
 
 .profile {
   color: #000;
-  background-color: #ffd54f;
+  background-color: #f5be0b;
   position: absolute;
   left: -70px;
   top: 17%;
@@ -203,22 +208,17 @@
   background: linear-gradient(170deg, #01e4f8 0%, #1d3ede 100%);
 }
 .gr-2 {
-  background: linear-gradient(170deg, #b4ec51 0%, #429321 100%);
+  background: linear-gradient(170deg, #b4ec51 0%, #2a9201 100%);
 }
 .gr-3 {
   background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
 }
 .gr-4 {
-  background: linear-gradient(170deg, #f0ec1b 0%, #e76c06 100%);
+  background: linear-gradient(170deg, #f1ee07 0%, #c25801 100%);
 }
 * {
   transition: 0.5s;
 }
-/* .align-middle {
-	 position: relative;
-	 top: 20%;
-	 transform: translateY(-50%);
-} */
 .services .column {
   margin-top: 3rem;
   padding-left: 3rem;
@@ -335,7 +335,7 @@
 
 .horizontal-tabs-steps .nav-item:after {
   content: "";
-  border-top: 5px dotted #73b6ff;
+  border-top: 5px dotted #2b0049;
   position: absolute;
   z-index: 0;
   top: 12px;
@@ -347,12 +347,12 @@
 
 .horizontal-tabs-steps .nav-item:last-child:after {
   content: "";
-  border-top: 0px dotted #4da3ff;
+  border-top: 0px dotted #2b0049;
 }
 
 .horizontal-tabs-steps .nav-item.complete-step:after {
   content: "";
-  border-top: 5px dotted #4d7ed2;
+  border-top: 5px dotted #2b0049;
   position: absolute;
   z-index: 0;
   top: 12px;
@@ -363,8 +363,8 @@
 }
 
 .platform-content img{
-  width: 60%;
-  margin-left: 20%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .horizontal-tabs-steps .nav-link {
@@ -372,20 +372,20 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  color: #3c4858;
+  color: #2b0049;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  border: 2px solid #4d7ed2;
+  border: 2px solid #2b0049;
   z-index: 1;
   position: relative;
 }
 
 .horizontal-tabs-steps .nav-link:hover {
-  background: #22437c;
-  border: 2px solid #22437c;
+  background: #2b0049;
+  border: 2px solid #2b0049;
   color: #fff !important;
   transition: 0.3s all;
 }
@@ -401,8 +401,8 @@
 .horizontal-tabs-steps .nav-item.show .nav-link,
 .horizontal-tabs-steps .nav-link.active {
   color: #fff;
-  background-color: #22437c;
-  border-color: #22437c;
+  background-color: #2b0049;
+  border-color: #2b0049;
   width: 31px;
   height: 31px;
   border-radius: 50%;
@@ -418,8 +418,8 @@
 }
 
 .horizontal-tabs-steps .checked-steps {
-  background-color: #22437c !important;
-  border: 1px solid #22437c !important;
+  background-color: #2b0049 !important;
+  border: 1px solid #2b0049 !important;
   color: #fff !important;
 }
 
@@ -469,7 +469,7 @@
   content: "";
   width: 14px;
   height: 2px;
-  background: #333;
+  background: #2b0049;
   position: absolute;
   top: calc(50% - 1px);
   right: 1rem;
@@ -482,7 +482,7 @@
   content: "";
   width: 2px;
   height: 14px;
-  background: #333;
+  background: #2b0049;
   position: absolute;
   top: calc(50% - 7px);
   right: calc(1rem + 6px);
