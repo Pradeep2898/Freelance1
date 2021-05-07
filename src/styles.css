@@ -77,4 +77,7 @@
       transform: translateX(-31px);
     }
   }
-  
+  body{
+    background-color: rgb(223, 240, 255);
+    color: #000;
+  }

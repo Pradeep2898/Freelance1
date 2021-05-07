@@ -35,8 +35,6 @@
 .packages,
 .works,
 .say {
-  background-color: rgb(223, 240, 255);
-  color: #000;
   padding: 6%;
 }
 .why-us h2 {
@@ -208,13 +206,13 @@
   background: linear-gradient(170deg, #01e4f8 0%, #1d3ede 100%);
 }
 .gr-2 {
-  background: linear-gradient(170deg, #b4ec51 0%, #2a9201 100%);
+  background: linear-gradient(170deg, #4b6cb7 0%, #182848 100%);
 }
 .gr-3 {
   background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
 }
 .gr-4 {
-  background: linear-gradient(170deg, #f1ee07 0%, #c25801 100%);
+  background: linear-gradient(170deg, #fac451 0%, #e2321b 100%);
 }
 * {
   transition: 0.5s;
@@ -339,7 +337,7 @@
   position: absolute;
   z-index: 0;
   top: 12px;
-  width: 265px;
+  width: 140%;
   left: 0px;
   transition: border 1s ease-out;
   transition-delay: 0s, 0s, 0.1s;
@@ -356,15 +354,15 @@
   position: absolute;
   z-index: 0;
   top: 12px;
-  width: 265px;
+  width: 100%;
   left: 0px;
   transition: border 1s ease-out;
   transition-delay: 0s, 0s, 0.1s;
 }
 
 .platform-content img{
-  width: 50%;
-  margin-left: 25%;
+  width: 90%;
+  margin-left: 10%;
 }
 
 .horizontal-tabs-steps .nav-link {
@@ -384,7 +382,7 @@
 }
 
 .horizontal-tabs-steps .nav-link:hover {
-  background: #2b0049;
+  background: #51018a;
   border: 2px solid #2b0049;
   color: #fff !important;
   transition: 0.3s all;

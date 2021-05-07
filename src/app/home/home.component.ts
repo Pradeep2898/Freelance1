@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 declare var $: any;
 @Component({
   selector: 'app-home',
@@ -10,6 +11,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(()=> {
+      AOS.init();
+    });
     $(document).ready(()=> {
       $(".horizontal-tabs-steps .nav-link").click(()=> {
         $(this).parent().prevAll().children('.horizontal-tabs-steps .nav-link').addClass('checked-steps');
